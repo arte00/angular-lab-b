@@ -1,0 +1,7 @@
+<div id="frame">
+  <div>Random component (max = {{max}})</div>
+  <span>{{randomNumber}}</span>
+  <button (click)="onClick()">Generate</button>
+  <span *ngIf="isSmallerThanHalf()" [class.green]="isSmallerThanHalf()">Bottom range of values</span>
+  <span *ngIf="!isSmallerThanHalf()" [class.red]="!isSmallerThanHalf()">Upper range of values</span>
+</div>
